@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title> flexbox practice</title>
+    </head>
+    <body style=" padding-bottom:100px;>
+        <div style="
+
+        display:flex;
+        flex-direction: row;
+        ">
+            <div style="background-color:lightskyblue;">div 1 text</div>
+            <div style="background-color: lightpink ;">div 2  <p>text</p></div>
+        </div>
+
+        <div style="
+        margin-top: 30px;
+        display:flex;
+        flex-direction: row;
+        ">
+            <div style="background-color:lightskyblue;
+            width: 100px;">100px</div>
+            <div style="background-color: lightpink ;
+            flex: 1;"> flex 1 </div>
+        </div>
+        <div style="
+        margin-top: 30px;
+        display:flex;
+        flex-direction: row;
+        ">
+            
+            <div style="background-color: lightblue ;
+            flex: 1;"> 100px </div>
+            <div style="background-color:lightpink;
+            width: 100px;">100px</div>
+            <div style="background-color:lightskyblue;
+            flex: 2;"> flex 2</div>
+        </div>
+        <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: red;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        ">
+            
+            <div style="background-color: lightblue ;
+            width: 100px;"> 100px </div>
+            <div style="background-color:lightpink;
+            width: 100px;">100px</div>
+            <div style="background-color:lightskyblue;
+            width: 100px;">100px</div>
+        </div>
+        <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: red;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ">
+            
+            <div style="background-color: lightblue ;
+            width: 100px;"> 100px </div>
+            <div style="background-color:lightpink;
+            width: 100px;">100px</div>
+            <div style="background-color:lightskyblue;
+            width: 100px;">100px</div>
+        </div>
+        <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: red;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ">
+            
+            <div style="background-color: lightblue ;
+            width: 100px;"> 100px </div>
+            <div style="background-color:lightpink;
+            width: 100px;">100px</div>
+            <div style="background-color:lightskyblue;
+            width: 100px;">100px</div>
+        </div>
+
+    </body>
+</htm>
+.image{
+    width: 100%;
+   
+   
+}
+
+.video-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author{
+    font-size: 12px;
+    color: rgb(96,96,96);
+    margin-bottom: 4px;
+    }
+.video-stats{
+    font-size: 12px;
+    color: rgb(96,96,96);
+ }
+
+.video-info-grid { 
+    display: grid;
+    grid-template-columns: 50px 1fr;
+   
+
+}
+
+.profile-picture{
+    width: 36px;
+    border-radius: 50px;
+}
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 0;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+@media(max-width: 750px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    @media(min-width:751px;) and (max-width:999px){
+        .video-grid{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+   @media (min-width: 1000px){
+        .video-grid{
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+        }
+   }
+  
+   .video-time {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+  }
+  
